@@ -1,0 +1,275 @@
+/* Workshop Header */
+.workshop-header {
+  position: relative;
+  padding: 8rem 0 4rem;
+  background: linear-gradient(135deg, #8b4513, #cd853f);
+  overflow: hidden;
+}
+
+.workshop-header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.2) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30L30 0z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
+}
+
+.workshop-header-content {
+  position: relative;
+  color: white;
+  max-width: 800px;
+}
+
+.workshop-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.workshop-header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.workshop-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.workshop-meta .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: #8b4513;
+  border-color: white;
+}
+
+/* Workshop Content */
+.workshop-content {
+  padding: 3rem 0 5rem;
+  background: var(--bg-secondary);
+}
+
+.workshop-description {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--text-secondary);
+}
+
+/* Activities Section */
+.activities-section {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.05), rgba(205, 133, 63, 0.03));
+  border-color: rgba(139, 69, 19, 0.15);
+}
+
+.activities-section h2 {
+  color: #8b4513;
+}
+
+.activities-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activity-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.activity-time {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(139, 69, 19, 0.1);
+  color: #8b4513;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  height: fit-content;
+}
+
+.activity-content h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.activity-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Assignment Section */
+.assignment-section {
+  background: linear-gradient(135deg, rgba(201, 162, 39, 0.1), rgba(201, 162, 39, 0.05));
+  border-color: rgba(201, 162, 39, 0.2);
+}
+
+.assignment-section h2 {
+  color: var(--secondary);
+}
+
+.assignment-card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px dashed rgba(201, 162, 39, 0.4);
+}
+
+.assignment-card p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.9;
+}
+
+/* Tools List */
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tool-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tool-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.tool-link:hover {
+  background: #8b4513;
+  color: white;
+}
+
+.tool-link svg:first-child {
+  color: #8b4513;
+  flex-shrink: 0;
+}
+
+.tool-link:hover svg:first-child {
+  color: white;
+}
+
+.tool-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.tool-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tool-desc {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Lecture CTA */
+.lecture-cta {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: white;
+  text-align: center;
+}
+
+.lecture-cta h3 {
+  color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  justify-content: center;
+}
+
+.lecture-cta .cta-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.lecture-cta p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.25rem;
+}
+
+/* Navigation */
+.workshop-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .workshop-header {
+    padding: 7rem 0 3rem;
+  }
+
+  .activity-item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .activity-time {
+    width: fit-content;
+  }
+
+  .workshop-navigation {
+    flex-direction: column;
+  }
+
+  .nav-btn {
+    max-width: 100%;
+  }
+}
