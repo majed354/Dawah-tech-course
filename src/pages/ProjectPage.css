@@ -1,0 +1,226 @@
+/* Project Header */
+.project-header {
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+}
+
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: var(--secondary);
+  color: var(--bg-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+}
+
+/* Ideas Section */
+.ideas-section {
+  background: var(--bg-secondary);
+}
+
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.idea-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.idea-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.idea-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 1.25rem;
+}
+
+.idea-card h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.idea-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Stages Section */
+.stages-section {
+  background: white;
+}
+
+.stages-timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.stages-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 27px;
+  width: 4px;
+  height: 100%;
+  background: var(--bg-secondary);
+  border-radius: 2px;
+}
+
+.stage-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.stage-number {
+  width: 56px;
+  height: 56px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  border: 4px solid white;
+  box-shadow: var(--shadow-md);
+}
+
+.stage-content {
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 14px;
+  flex: 1;
+}
+
+.stage-content h3 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.stage-content p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Criteria Section */
+.criteria-section {
+  background: var(--bg-secondary);
+}
+
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.criterion-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.criterion-card:hover {
+  transform: translateX(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.criterion-card svg {
+  color: var(--secondary);
+  flex-shrink: 0;
+}
+
+.criterion-card span {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* CTA Section */
+.project-page .cta-section {
+  background: white;
+}
+
+.project-page .cta-box {
+  text-align: center;
+  padding: 4rem;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  border-radius: 24px;
+  color: white;
+}
+
+.project-page .cta-box svg {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.project-page .cta-box h2 {
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.project-page .cta-box p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stages-timeline::before {
+    right: 24px;
+  }
+
+  .stage-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  .stage-item {
+    gap: 1rem;
+  }
+
+  .stage-content {
+    padding: 1.25rem;
+  }
+
+  .project-page .cta-box {
+    padding: 2.5rem 1.5rem;
+  }
+}
